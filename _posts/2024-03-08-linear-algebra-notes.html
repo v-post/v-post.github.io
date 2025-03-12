@@ -32,8 +32,11 @@ background: '/img/posts/linear_algebra/top_linal.png'
 
 <h2>Chapter 1 - Vectors</h2>
 
-<p><i>The following notes are based on the <a href="https://web.stanford.edu/~boyd/vmls/">"Introduction to Applied Linear Algebra - Vectors, Matrices, and Least Squares" </a> book by Stephen Boyd and Lieven Vandenberghe. 
-  It is a very useful resource for people interested in all things Data Science and Artificial Intelligence, as both of those fields are basically various shades of statistics intertwined and built from with various shades of applied mathematics, where linear lagebra plays a dominating role.</i></p>
+<p><i>The following notes are based on the "Introduction to Applied Linear Algebra - Vectors, Matrices, and Least Squares" book by 
+  Stephen Boyd and Lieven Vandenberghe, available freely online <a href="https://web.stanford.edu/~boyd/vmls/">here</a>. 
+  It is a very useful resource for people interested in all things Data Science and Artificial Intelligence, as both of those 
+  fields are basically various shades of statistics intertwined with and built from various shades of applied mathematics, 
+  where linear lagebra plays a dominating role.</i></p>
 
 <h3>1.1 Vectors</h3>
 
@@ -43,13 +46,20 @@ background: '/img/posts/linear_algebra/top_linal.png'
   $$ \begin{bmatrix}-1.1\\0.0\\3.6\\-7.2\end{bmatrix}  \ or \ \begin{pmatrix}-1.1\\0.0\\3.6\\-7.2\end{pmatrix}  \ or \ \begin{bmatrix} -1.1 & 0.0 & 3.6 & -7.2 \end{bmatrix}$$
 </p>
 
-<p>A vector consists of <span class="term">elements</span>, also called <i><b>components</b>, <b>entries</b>, or <b>coefficients</b></i>. In the example above, vector elements are -1.1, 0.0, 3.6, and -7.2. 
-(<i>As you can see in linear algebra, as well as in Data Science or Machine Learning, which heavily use linear algebra, a lot of things have multiple names, sometimes it gets very confusing.</i>)</p>
+<p>A vector consists of <span class="term">elements</span>, also called <i><b>components</b>, <b>entries</b>, or 
+  <b>coefficients</b></i>. In the example above, vector elements are -1.1, 0.0, 3.6, and -7.2. 
+(<i>As you can notice in Linear Algebra, as well as in Data Science or Machine Learning, which use Linear Algebra heavily, 
+  a lot of things have multiple names, sometimes it gets very confusing.</i>)</p>
 
-<!-- TODO: Should we call ir a scalar? -->
-<p>The <span class="term">size</span> of the vector is the number of elements it contains. In the example above, the size of each vector is 4. 
+<p>The <span class="term">size</span>, aka <i><b>dimension</b></i> or <i><b>length</b></i>, of the vector is the number 
+  of elements it contains. In the example above, the size of each vector is 4. 
   The vector of size <i><b>n</b></i> is called an <span class="term">n-vector</span>. 
-  If n=1, we have a <i><b>1-vector</b></i>, which is considered to be the same as a number<!--(scalar???)-->, meaning that [1.3] is the same as 1.3.</p>
+  If n=1, we have a <i><b>1-vector</b></i>, for example [3.6]. It is important to note that the 1-vector [3.6] is not the same 
+  as a <i>scalar</i> 3.6, as scalars have only magnitude, but vectors, even the one dimensional ones, 
+  have magnitude and direction. However, in linear algebra, 1-vectors are often treated as scalars, while other fields, 
+  such as physics, they are never treated as such.</p>
 
-<p>It is convenient to denote vectors with letters, for example a vetor <i><b>a</b></i> .... </p>
+<p>It is convenient to denote vectors with letters and its elements with subscripts, 
+  for example a vector <i><b>a</b></i> will have elements \(a_1\), \(a_2\), \(a_3\), etc. We can write an element of 
+  vector as \(a_i\), where <i><b>i</b></i> will go from 1 to the size of the vector, <span class="term">n</span>.</p>
 
